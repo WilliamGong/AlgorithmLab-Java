@@ -1,7 +1,7 @@
 package com.williamgong;
 
 public class sort {
-    private int aux[];
+    private int[] aux;
 
     public sort(int length) {
         aux = new int[length];
@@ -16,6 +16,18 @@ public class sort {
         }
     }
 
+    public void shell(int[] current) {
+        int length = current.length;
+        int increment = length / 3 + 1;
+        while (increment > 1) {
+            for (int i = 0; i < length; i += increment) {
+                for (int j = i; j > 0 && current[j] < current[j - increment]; j -= increment) {
+                    exchange(current, j, j - increment);
+                }
+            }
+            increment /= 3;
+        }
+    }
 
     private void exchange(int[] current, int a, int b) {
         int temp = current[a];
@@ -24,3 +36,4 @@ public class sort {
     }
 
 }
+
