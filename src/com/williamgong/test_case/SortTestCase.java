@@ -1,6 +1,7 @@
 package com.williamgong.test_case;
 
 import com.williamgong.sort.InsertSort;
+import com.williamgong.sort.MergeUp;
 import com.williamgong.sort.ShellSort;
 
 public class SortTestCase {
@@ -30,7 +31,10 @@ public class SortTestCase {
        }else if (this.mode.equals("shell")) {
            ShellSort test = new ShellSort();
            test.sort(testArray);
-       }else {
+       }else if (this.mode.equals("mergeUp")) {
+           MergeUp test = new MergeUp();
+           test.sort(this.testArray);
+       } else {
            System.out.println("No such mode");
        }
     }
