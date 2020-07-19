@@ -1,4 +1,4 @@
-package com.williamgong.sort;
+package com.williamgong.algorithm.sort;
 
 public abstract class Sort {
     protected int[] aux;
@@ -32,8 +32,6 @@ public abstract class Sort {
         }
 
         //put aux[] in the current range of current[]
-        for(int m = start; m <= end; m++) {
-            current[m] = aux[m];
-        }
+        if (end + 1 - start >= 0) System.arraycopy(aux, start, current, start, end + 1 - start);
     }
 }

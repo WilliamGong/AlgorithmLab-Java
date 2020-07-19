@@ -5,6 +5,7 @@ import com.williamgong.test_case.SortTestCase;
 public class Main {
 
     public static void main(String[] args) {
+        //init
         SortTestCase testInsert = new SortTestCase(20, 100, "insert");
         SortTestCase testShell = new SortTestCase(20, 100, "shell");
         SortTestCase testMergeUp = new SortTestCase(20, 100, "mergeUp");

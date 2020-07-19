@@ -1,4 +1,4 @@
-package com.williamgong.sort;
+package com.williamgong.algorithm.sort;
 
 public class ShellSort extends Sort{
 

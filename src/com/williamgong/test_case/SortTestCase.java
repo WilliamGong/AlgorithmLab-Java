@@ -1,8 +1,8 @@
 package com.williamgong.test_case;
 
-import com.williamgong.sort.InsertSort;
-import com.williamgong.sort.MergeUp;
-import com.williamgong.sort.ShellSort;
+import com.williamgong.algorithm.sort.InsertSort;
+import com.williamgong.algorithm.sort.MergeUp;
+import com.williamgong.algorithm.sort.ShellSort;
 
 public class SortTestCase {
     private int[] testArray;

@@ -1,4 +1,4 @@
-package com.williamgong.sort;
+package com.williamgong.algorithm.sort;
 
 public class InsertSort extends Sort{
     public void sort(int[] current) {
